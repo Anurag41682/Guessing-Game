@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,21 +12,30 @@ html {
 
 body {
   font-family: 'Playfair Display', sans-serif;
-  color: #adadad;
-  background-color: hsl(192, 100%, 14%);
+  color: #b68daf;
+  background-color: hsl(191, 100%, 6%);
   /* background-color: #60b347; */
 }
-
+.waterMark {
+  background-image: url(002.jpg);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.25;
+}
 /* LAYOUT */
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px double #adadad;
+  border-bottom: 7px double #b68daf;
 }
 
 main {
   height: 65vh;
-  color: #adadad;
+  color: #b68daf;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -56,12 +65,12 @@ h1 {
 }
 
 .number {
-  background: #aeaeae;
+  background: #b68daf;
   color: #333;
   font-size: 6rem;
   width: 15rem;
   padding: 3rem 0rem;
-  text-align:center;
+  text-align: center;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -84,7 +93,7 @@ h1 {
 
 .guess {
   background: none;
-  border: 4px solid #aeaeae;
+  border: 4px solid #b68daf;
   font-family: inherit;
   color: inherit;
   font-size: 5rem;
@@ -97,12 +106,12 @@ h1 {
 
 .btn {
   border: none;
-  background-color: #aeaeae;
+  background-color: #b68daf;
   color: #222;
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -120,15 +129,15 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.label-highscore{
-  display:flex;
+.label-highscore {
+  display: flex;
   align-items: center;
 }
 
-.check{
+.check {
   border-radius: 5%;
 }
 
-img{
+img {
   padding-right: 12px;
 }

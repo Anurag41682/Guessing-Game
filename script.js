@@ -9,7 +9,7 @@ document.querySelector('.check').addEventListener('click', function () {
       'Not valid Number Enter between 1 and 20 !';
   } else if (guessed === toGuess) {
     document.querySelector('.message').textContent = 'Correct Number !!';
-    document.querySelector('body').style.backgroundColor = '#196900';
+    document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('.number').style.width = '20rem';
     document.querySelector('.number').style.color = '#be9200';
     document.querySelector('.number').textContent = toGuess;
@@ -37,6 +37,6 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').style.color = '#333';
   document.querySelector('.guess').value = '';
   document.querySelector('.message').textContent = 'Start guessing...';
-  document.querySelector('body').style.backgroundColor = 'hsl(192, 100%, 14%)';
+  document.querySelector('body').style.backgroundColor = 'hsl(192, 100%, 6%)';
   document.querySelector('.number').style.width = '15rem';
 });
