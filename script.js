@@ -8,7 +8,8 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent =
       'Not valid Number Enter between 1 and 20 !';
   } else if (guessed === toGuess) {
-    document.querySelector('.message').textContent = 'Correct Number !!';
+    document.querySelector('.message').textContent =
+      'Correct Number, You Won 🎉!!';
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('.number').style.width = '20rem';
     document.querySelector('.number').style.color = '#be9200';
